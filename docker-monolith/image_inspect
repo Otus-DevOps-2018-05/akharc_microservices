@@ -1,0 +1,88 @@
+[
+    {
+        "Id": "sha256:1096a451e7ba3a9cf3f907492437866f601892a3adfa9aaf8d2bc246f6ee3598",
+        "RepoTags": [
+            "akha/ubuntu-tmp-file:latest"
+        ],
+        "RepoDigests": [],
+        "Parent": "sha256:52b10959e8aa3e4810807133037ab50aa7e320e43ed9a5b5845c802d792ac1b0",
+        "Comment": "",
+        "Created": "2018-08-29T21:34:10.376201906Z",
+        "Container": "759097b1146a8bd53c25608b21556c7fff2981c5c2cb0b17338aa259bc8391c9",
+        "ContainerConfig": {
+            "Hostname": "759097b1146a",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": true,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": true,
+            "OpenStdin": true,
+            "StdinOnce": true,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "/bin/bash"
+            ],
+            "Image": "ubuntu:16.04",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {}
+        },
+        "DockerVersion": "18.09.0-ce-tp4",
+        "Author": "",
+        "Config": {
+            "Hostname": "759097b1146a",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": true,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": true,
+            "OpenStdin": true,
+            "StdinOnce": true,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "/bin/bash"
+            ],
+            "Image": "ubuntu:16.04",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {}
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 114992126,
+        "VirtualSize": 114992126,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/81d69475e8905be80bb7a7d5a945a1f77c3bf588d2948354faf0cff5b3e61470/diff:/var/lib/docker/overlay2/a4ed80e3935aa02f5fba31221f67b95db953797adb3fd5dde7a2669e16b537b8/diff:/var/lib/docker/overlay2/c53354fa46f792feff292959b89bc5a19d316d026a3fc1e9751f73ff059cca41/diff:/var/lib/docker/overlay2/0ba6a082778f43996030972d3334f4c851a079065dbb1c1408b89f537e930a17/diff:/var/lib/docker/overlay2/a407427cef073e81072b7799bfc8fb2e571988ab28c27947df2fdb8e4c395cdd/diff",
+                "MergedDir": "/var/lib/docker/overlay2/e827fd40df66eb053354f005dc8a57d72ecc1ecde503c8b67fc86c5d8d74566d/merged",
+                "UpperDir": "/var/lib/docker/overlay2/e827fd40df66eb053354f005dc8a57d72ecc1ecde503c8b67fc86c5d8d74566d/diff",
+                "WorkDir": "/var/lib/docker/overlay2/e827fd40df66eb053354f005dc8a57d72ecc1ecde503c8b67fc86c5d8d74566d/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:8823818c474862932702f8a920abea43b2560ddceb910d145be9ba0eb149a643",
+                "sha256:4a7a5ec0f29e4172be88650833b9e6ba9e3dd6c231359357a778bdc6bfbbe86f",
+                "sha256:87a2d000062258f5b4628561771fa14780688808cf6df7cb93f948695b96e1f8",
+                "sha256:07663827a77f781d46aaeb1b1492484f45970d1cdd5b9e1e4e35680ce15d41d9",
+                "sha256:d7232280c8c479f251dffc9baf4eb025b8d372820678fac87fe0c4dde00ca9cb",
+                "sha256:6775643d539412d2f0c8774e8d28d2e9149e9352f7b2494468fa17527f2accfa"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2018-08-30T00:34:10.423378246+03:00"
+        }
+    }
+]
