@@ -65,3 +65,10 @@ gitlab/gitlab-runner:latest
 #HW 17
 
 Получена практика по работе с окружениями в Gitlab-CI
+
+#HW 18
+
+Создан Dockerfile для Prometheus, пересобраны образы для приложения reddit;
+переписан файл docker-compose для мониторинга ui, post и comment;
+исследованы базовые функции Прометеуса;
+добавлен node exporter для мониторинга дополнительных метрик;
