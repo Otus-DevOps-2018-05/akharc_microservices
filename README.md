@@ -28,3 +28,17 @@ bash-4.2# docker run -d --network=reddit --network-alias=post_db_asterisk --netw
 bash-4.2# docker run -d --network=reddit --network-alias=post_asterisk --env POST_DATABASE_HOST=post_db_asterisk akha/post:1.0
 bash-4.2# docker run -d --network=reddit --network-alias=comment_asterisk --env COMMENT_DATABASE_HOST=comment_db_asterisk akha/comment:1.0
 bash-4.2# docker run -d --network=reddit -p 9292:9292 --env POST_SERVICE_HOST=post_asterisk --env COMMENT_SERVICE_HOST=comment_asterisk akha/ui:1.0
+
+#HW15
+
+При создании контейнера с сетью типа "host" выводы команд
+```
+docker exec -ti net_test ifconfig
+docker-machine ssh docker-host ifconfig
+```
+идентичны, т.к. сеть контейнера в данном случае не изолирована от сети хоста и контейнеру доступны те же интерфейсы, что и хосту.
+
+Имя префикса берется из названия каталога проекта. Префикс может быть перезfписан диреткивой -p или переменной COMPOSE_PROJECT_NAME
+
+Задание со *:
+Добавлен файл docker-compose.override.yml
