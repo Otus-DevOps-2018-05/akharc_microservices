@@ -17,6 +17,7 @@ docker run --rm --pid host -ti tehbilly/htop
 1) при помощи docker-machine создан хост в GCP для тестирования и запуска докер-контейнеров
 2) создан dockerfile для создания образа приложения puma, образ добавлен в докерхаб
 3) из созданного образа запущены контейнеры на докер-хосте в GCP и на локальной ВМ.
+
 #HW14
 
 Выполнена практика по запуску микросервисов в докер-контейнерах
@@ -42,3 +43,22 @@ docker-machine ssh docker-host ifconfig
 
 Задание со *:
 Добавлен файл docker-compose.override.yml
+
+#HW16
+
+При помощи docker-machine создана ВМ для запуска gitlab-ci:
+```
+docker-machine create --driver google  --google-machine-image https://www.googleapis.com/compute/v1/projects/ubuntu-os-cloud/global/images/family/ubuntu-1604-lts  --google-machine-type n1-standard-1  --google-disk-size 100 --google-zone europe-west1-b  docker-ci-gitlab
+
+```
+Затем вручную запущена Omnibus-инсталяция gitlab-ci
+
+
+Создан gitlab-runner:
+```
+docker-machine ssh docker-ci-gitlab
+docker run -d --name gitlab-runner --restart always \
+-v /srv/gitlab-runner/config:/etc/gitlab-runner \
+-v /var/run/docker.sock:/var/run/docker.sock \
+gitlab/gitlab-runner:latest 
+```
