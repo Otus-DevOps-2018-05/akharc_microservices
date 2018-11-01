@@ -92,3 +92,19 @@ https://hub.docker.com/u/akha/
 Настроен сбор логов с помощью Fluentd
 Настроена передача логов в ELK и их визуализация
 Настроен парсинг структурированных и неструктурированных логов.
+
+#HW 12
+- Созданы yaml-файлы с манифестами приложений
+- Пройден туториал Kubernetes The Hard way
+- Проверен запуск подов:
+
+ ```
+ kubectl apply -f mongo-deployment.yml
+ deployment.apps/mongo-deployment created
+ kubectl apply -f comment-deployment.yml
+ deployment.apps/comment-deployment created
+ kubectl apply -f ui-deployment.yml
+ deployment.apps/ui-deployment created
+ kubectl apply -f post-deployment.yml
+ deployment.apps/post-deployment created
+ ```
