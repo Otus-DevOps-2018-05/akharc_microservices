@@ -62,3 +62,6 @@ docker run -d --name gitlab-runner --restart always \
 -v /var/run/docker.sock:/var/run/docker.sock \
 gitlab/gitlab-runner:latest 
 ```
+#HW 17
+
+Получена практика по работе с окружениями в Gitlab-CI
