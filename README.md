@@ -108,3 +108,10 @@ https://hub.docker.com/u/akha/
  kubectl apply -f post-deployment.yml
  deployment.apps/post-deployment created
  ```
+# HW 22
+
+ - Создан локальный кластер k8s при помощи minikube
+ - В локальном кластере k8s развернуты поды и сервисы приложения reddit
+ - Ислледована возможность создания и использования неймспейсов
+ - Развернут кластер k8s в GKE
+ - Развернуто приложение reddit в GKE (приложен скриншот в kubernetes/reddit)
